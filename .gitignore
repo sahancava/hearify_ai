@@ -1,5 +1,9 @@
 *.svg
 *.png
 *.jpg
-*.webp
+client*
+demo*
+hep*
+socials*
+hft*
 assets/libs/line-awesome/svg
