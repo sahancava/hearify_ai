@@ -3742,6 +3742,7 @@ img.h600 {
   .site-header .header-left,
   .site-header .header-right {
     padding: 0;
+    margin-left: 5%;
   }
   .site-header .main-menu > ul > li > a {
     padding: 14px 10px;
@@ -3758,7 +3759,7 @@ img.h600 {
 }
 @media (max-width: 992px) {
   .site-header .canvas-menu {
-    display: block;
+    display: none;
   }
   .site-header .header-center {
     text-align: left;
@@ -3921,9 +3922,9 @@ img.h600 {
   }
 }
 @media (max-width: 768px) {
-  .site-header .canvas-menu {
+  /* .site-header .canvas-menu {
     margin-right: 20px;
-  }
+  } */
   .site-header .customer a i {
     display: block;
     margin: 0;
@@ -7241,6 +7242,12 @@ form.checkout-coupon input[type=text] {
 .heading.mb24 {
   margin-bottom: 24px;
 }
+.heading.mb12 {
+  margin-bottom: 12px;
+}
+.platforms-mb12 {
+  margin-bottom: 12px;
+}
 .heading.mb100 {
   margin-bottom: 100px;
 }
@@ -9995,7 +10002,8 @@ form.checkout-coupon input[type=text] {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-color: var(--sala-shade-background, #F8F9FC);
+  /* background-color: var(--sala-shade-background, #F8F9FC); */
+  background-color: var(--sala-shade-background, #F8F9FC) !important;
   height: 64px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11735,7 +11743,7 @@ form.checkout-coupon input[type=text] {
 }
 .block-grid.layout-01 {
   display: grid;
-  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-columns: 50% 50%;
   grid-gap: 30px;
 }
 .block-grid.layout-01 img {
@@ -12917,4 +12925,15 @@ form.checkout-coupon input[type=text] {
 .animate__jump {
   --float-animation-ease: ease;
   animation: animateJump 1s var(--float-animation-ease) infinite alternate;
+}
+
+
+.icon-box-background-grey {
+  background-color: var(--sala-shade-background, #F8F9FC) !important;
+}
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    margin-left: 17%;
+  }
 }
