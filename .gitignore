@@ -7,8 +7,4 @@
 *.map
 *.js
 *.scss
-*.ttf
-*.eot
-*.woff2
-*.woff
 assets/libs/line-awesome/svg
