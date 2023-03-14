@@ -3,5 +3,6 @@
 *.jpg
 *.webp
 gallery*
-portfolio*
+portfolio-gallery*
+portfolio-detail*
 assets/libs/line-awesome/svg
