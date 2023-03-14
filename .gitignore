@@ -6,5 +6,5 @@
 *.css
 *.map
 *.js
-*.scss
+assets/scss
 assets/libs/line-awesome/svg
