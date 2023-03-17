@@ -35,6 +35,30 @@
             href="assets/libs/swiper/swiper-bundle.min.css"
         >
         <link rel="stylesheet" href="assets/css/style.css" >
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Work',     11],
+            ['Eat',      2],
+            ['Commute',  2],
+            ['Watch TV', 2],
+            ['Sleep',    7]
+            ]);
+
+            var options = {
+                backgroundColor: 'transparent',
+                is3D: true,
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+        </script>
     </head>
     <body>
         <div id="wrapper">
@@ -45,7 +69,7 @@
             <header id="header" class="site-header is-transparent">
                 <div class="container-fluid">
                     <div class="row flex-align-c inner">
-                        <div class="col-lg-1 col-6">
+                        <div class="col-lg-1 col-6 text-left">
                             <div class="header-left flex flex-align-c">
                                 <div class="canvas-menu">
                                     <div class="icon">
@@ -84,7 +108,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-0 text-center">
+                        <div class="col-lg-7 col-0 text-right header-menu">
                             <div class="header-center">
                                 <div class="main-menu">
                                     <div class="menu-action">
@@ -917,7 +941,8 @@
                                 </div>
                                 <div class="col-lg-8">
                                     <div class="block-chart lg-mt32">
-                                        <figure class="pie-chart" data-bg="var(--sala-shade-background, $shade_background)" style="background:
+                                        <div id="piechart_3d" style="width: 600px; height: 600px;"></div>
+                                        <!-- <figure class="pie-chart" data-bg="var(--sala-shade-background, $shade_background)" style="background:
                                             radial-gradient(
                                                 circle closest-side,
                                                 var(--sala-shade-background, $shade_background) 0,
@@ -942,7 +967,7 @@
                                                 #FE8202 86%, 
                                                 #FE8202 100%			
                                             );">
-                                        </figure>
+                                        </figure> -->
                                         <div class="chart-list">
                                             <ul>
                                                 <li><span style="background-color: #c6db03;"></span>Distribute to Community: 11%</li>
