@@ -35,30 +35,12 @@
             href="assets/libs/swiper/swiper-bundle.min.css"
         >
         <link rel="stylesheet" href="assets/css/style.css" >
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-        google.charts.load("current", {packages:["corechart"]});
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-            ['Task', 'Hours per Day'],
-            ['Work',     11],
-            ['Eat',      2],
-            ['Commute',  2],
-            ['Watch TV', 2],
-            ['Sleep',    7]
-            ]);
-
-            var options = {
-                backgroundColor: 'transparent',
-                is3D: true,
-                legend: 'none'
-            };
-
-            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-            chart.draw(data, options);
-        }
-        </script>
+        <style>
+            #chartdiv {
+              width: 100%;
+              height: 600px;
+            }
+            </style>
     </head>
     <body>
         <div id="wrapper">
@@ -932,7 +914,7 @@
                                         <div class="heading mb32">
                                             <div class="heading-sub color-navy">OUR DATA</div>
                                             <h2 class="heading-title size-l">Token Distribution</h2>
-                                            <div class="heading-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader.</div>
+                                            <div class="heading-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader.</div>
                                         </div>
                                         <div class="button-wrap">
                                             <a href="contact-01.html" class="button text color-navy" title="Know More">Know More <i class="las la-long-arrow-alt-right"></i></a>
@@ -941,7 +923,7 @@
                                 </div>
                                 <div class="col-lg-8">
                                     <div class="block-chart lg-mt32">
-                                        <div id="piechart_3d" style="width: 600px; height: 600px;"></div>
+                                        <div id="chartdiv"></div>
                                         <!-- <figure class="pie-chart" data-bg="var(--sala-shade-background, $shade_background)" style="background:
                                             radial-gradient(
                                                 circle closest-side,
@@ -968,7 +950,7 @@
                                                 #FE8202 100%			
                                             );">
                                         </figure> -->
-                                        <div class="chart-list">
+                                        <!-- <div class="chart-list">
                                             <ul>
                                                 <li><span style="background-color: #c6db03;"></span>Distribute to Community: 11%</li>
                                                 <li><span style="background-color: #FF1F25;"></span>Reserved Funding: 12%</li>
@@ -978,7 +960,7 @@
                                                 <li><span style="background-color: #FFDD0F;"></span>Product Develoment: 40%</li>
                                                 <li><span style="background-color: #FE8202;"></span>Marketing: 14%</li>
                                             </ul>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -1210,6 +1192,7 @@
             <!-- END POPUP -->
         </div>
 
+
         <!-- jQuery -->
         <script src="assets/js/jquery-1.12.4.js"></script>
         <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
@@ -1218,5 +1201,65 @@
         <script src="assets/libs/counter/jquery.counterup.min.js"></script>
         <script src="assets/libs/wowjs/wow.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+        <script>
+            am4core.ready(function() {
+            
+            // Themes begin
+            am4core.useTheme(am4themes_animated);
+            // Themes end
+            
+            var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+            chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+            
+            chart.data = [
+              {
+                country: "Lithuania",
+                litres: 501.9
+              },
+              {
+                country: "Czech Republic",
+                litres: 301.9
+              },
+              {
+                country: "Ireland",
+                litres: 201.1
+              },
+              {
+                country: "Germany",
+                litres: 165.8
+              },
+              {
+                country: "Australia",
+                litres: 139.9
+              },
+              {
+                country: "Austria",
+                litres: 128.3
+              }
+            ];
+            
+            chart.innerRadius = am4core.percent(30);
+            chart.depth = 100;
+            
+            chart.legend = new am4charts.Legend();
+            
+            var series = chart.series.push(new am4charts.PieSeries3D());
+            series.dataFields.value = "litres";
+            series.dataFields.depthValue = "litres";
+            series.dataFields.category = "country";
+            series.slices.template.cornerRadius = 5;
+            series.colors.step = 3;
+            
+            series.labels.template.disabled = true;
+            }); // end am4core.ready()
+
+            $(document).ready(function() {
+                $('[aria-labelledby="id-66-title"]').css('display', 'none');
+            });
+            </script>
+
     </body>
 </html>
