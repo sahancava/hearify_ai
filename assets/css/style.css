@@ -12963,6 +12963,12 @@ form.checkout-coupon input[type=text] {
   .first-section {
     margin-top: 50px;
   }
+  #chartdiv > div {
+    margin-top: -35%;
+  }
+  #chartdiv {
+    margin-bottom: -70%;
+  }
 }
 .text-right {
   text-align: right !important;
