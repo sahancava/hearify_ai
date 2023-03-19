@@ -12954,6 +12954,10 @@ form.checkout-coupon input[type=text] {
   .first-container-after-header {
     margin-top: 5%;
   }
+  .poweredBy {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
