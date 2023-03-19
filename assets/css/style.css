@@ -12943,13 +12943,27 @@ form.checkout-coupon input[type=text] {
 
 @media (min-width: 992px) {
   .col-lg-1 {
-    margin-left: 13.5%;
+    margin-left: 4.5%;
   }
   .header-menu {
-    width: 63.333333%;
+    width: 43.333333%;
+  }
+  .logo > a > img {
+    max-width: 200%;
+  }
+  .first-container-after-header {
+    margin-top: 5%;
   }
 }
 
+@media (max-width: 576px) {
+  .logo > a > img {
+    max-width: 78%;
+  }
+  .first-section {
+    margin-top: 50px;
+  }
+}
 .text-right {
   text-align: right !important;
 }
