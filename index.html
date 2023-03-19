@@ -4,15 +4,15 @@
         <meta charset="UTF-8" >
         <meta http-equiv="X-UA-Compatible" content="IE=edge" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <title>Sala</title>
+        <title>Hearify.AI</title>
 
         <!-- Style CSS -->
         <link rel="preconnect" href="https://fonts.googleapis.com" >
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
         <link
             rel="shortcut icon"
-            href="assets/images/favicon.png"
-            type="image/png"
+            href="assets/images/logo.png"
+            type="images/png"
         >
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
@@ -34,20 +34,24 @@
             rel="stylesheet"
             href="assets/libs/swiper/swiper-bundle.min.css"
         >
-        <link
-            rel="stylesheet"
-            href="assets/libs/twentytwenty/twentytwenty.css"
-        >
         <link rel="stylesheet" href="assets/css/style.css" >
+        <style>
+            #chartdiv {
+              width: 100%;
+              height: 600px;
+            }
+            </style>
     </head>
     <body>
         <div id="wrapper">
-            <div id="preload" class="preload"><div class="spin"></div></div>
+            <div id="preload" class="preload">
+                <div class="spin"></div>
+            </div>
             <!-- BEGIN SITE HEADER -->
             <header id="header" class="site-header is-transparent">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row flex-align-c inner">
-                        <div class="col-lg-3 col-6">
+                        <div class="col-lg-1 col-6 text-left">
                             <div class="header-left flex flex-align-c">
                                 <div class="canvas-menu">
                                     <div class="icon">
@@ -69,24 +73,12 @@
                                 </div>
                                 <div class="logo">
                                     <a href="index.html">
-                                        <svg width="100px" height="28px" viewBox="0 0 100 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                            <title>logo/black</title>
-                                            <g   stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <g   transform="translate(-130.000000, -26.000000)" fill-rule="nonzero">
-                                                    <g   transform="translate(130.000000, 26.000000)">
-                                                        <path d="M9.386,27.816 C14.136,27.816 18.392,25.118 18.582,20.406 C18.772,17.328 17.328,14.06 11.438,12.426 L8.208,11.476 C5.396,10.792 5.092,9.234 5.092,8.474 C5.092,6.612 6.84,5.396 9.006,5.396 C11.438,5.396 12.92,6.726 12.92,8.816 L17.784,8.816 C17.784,3.952 14.022,0.912 9.082,0.912 C4.256,0.912 0.266,3.99 0.266,8.588 C0.266,10.868 1.178,14.25 6.878,15.884 L10.108,16.72 C12.616,17.404 13.832,18.582 13.718,20.292 C13.604,22.078 12.008,23.446 9.386,23.446 C6.574,23.446 4.978,21.698 4.864,19.76 L0,19.76 C0,24.244 3.8,27.816 9.386,27.816 Z M30.742,27.74 C32.452,27.74 35.15,26.942 36.252,25.118 L36.252,27.398 L40.888,27.398 L40.888,9.652 L36.252,9.652 L36.252,11.856 C34.922,9.918 32.376,9.272 30.742,9.272 C26.068,9.272 21.698,12.844 21.698,18.506 C21.698,24.168 26.068,27.74 30.742,27.74 Z M31.388,23.294 C28.804,23.294 26.486,21.394 26.486,18.506 C26.486,15.618 28.804,13.718 31.388,13.718 C33.82,13.718 36.252,15.466 36.252,18.506 C36.252,21.546 33.934,23.294 31.388,23.294 Z M50.768,27.398 L50.768,0 L46.132,0 L46.132,27.398 L50.768,27.398 Z M63.954,27.74 C65.664,27.74 68.362,26.942 69.464,25.118 L69.464,27.398 L74.1,27.398 L74.1,9.652 L69.464,9.652 L69.464,11.856 C68.134,9.918 65.588,9.272 63.954,9.272 C59.28,9.272 54.91,12.844 54.91,18.506 C54.91,24.168 59.28,27.74 63.954,27.74 Z M64.6,23.294 C62.016,23.294 59.698,21.394 59.698,18.506 C59.698,15.618 62.016,13.718 64.6,13.718 C67.032,13.718 69.464,15.466 69.464,18.506 C69.464,21.546 67.146,23.294 64.6,23.294 Z"   fill="#111111"></path>
-                                                        <g   transform="translate(84.000000, 0.000000)" fill="#0057FC">
-                                                            <polygon   points="1.88140704 16 13.319933 4.56530476 13.319933 15.1051574 16 15.0569324 16 0 0.940703518 0 0.940703518 2.63362358 11.438526 2.68184863 0 14.1165439"></polygon>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
+                                        <img src="assets/images/logo.png">
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-0 text-center">
+                        <div class="col-lg-7 col-0 text-right header-menu">
                             <div class="header-center">
                                 <div class="main-menu">
                                     <div class="menu-action">
@@ -94,23 +86,22 @@
                                         <span class="item menu-close"><i class="las la-times"></i></span>
                                     </div>
                                     <ul>
-                                        <li class="is-mega-menu">
-                                            <a href="#demos">Demos</a>
+                                        <li class="is-normal-menu">
+                                            <a href="#about">About Hearify.AI</a>
                                         </li>
-                                        <li class="is-mega-menu">
-                                            <a href="https://uxper.gitbook.io/sala-html/">Documentation</a>
+                                        <li class="is-normal-menu">
+                                            <a href="#utility">Utility</a>
                                         </li>
-                                        <li class="is-mega-menu">
-                                            <a href="https://uxper.ticksy.com/">Support</a>
+                                        <li class="is-normal-menu">
+                                            <a href="#roadmap">Roadmap</a>
+                                        </li>
+                                        <li class="is-normal-menu">
+                                            <a href="#tokenomics">Tokenomics</a>
+                                        </li>
+                                        <li class="is-normal-menu">
+                                            <a href="#faq">F.A.Q</a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-6">
-                            <div class="header-right flex flex-align-c flex-content-e">
-                                <div class="buttons">
-                                    <a href="contact-01.html" class="button fullfield"><i class="las la-headset"></i><span>Get It Now</span></a>
                                 </div>
                             </div>
                         </div>
@@ -122,328 +113,22 @@
             <!-- BEGIN SITE MAIN -->
             <main id="main" class="site-main">
                 <div class="site-content pt0 pb0">
-                    <section class="section background-grey opt160">
+                    <section class="section opt80 overflow-hidden first-section">
                         <div class="container">
-                            <div class="heading align-center mb32">
-                                <div class="heading-sub color-navy w600">Full Dark More</div>
-                                <h2 class="heading-title size-xxl">Startup & SaaS <br> HTML Template</h2>
-                                <div class="heading-desc">By using this theme anyone can build Startup, SaaS, Apps, Crypto, <br> Web3, Software, IT services…website</div>
-                            </div>
-                            <div class="button-wrap popup-wrapper align-center">
-                                <a href="#demos" class="button fullfield" title="Explore Demos">Explore Demos</a>   
-                            </div>
-                            <div class="images layout-18 mt32">
-                                <img src="assets/images/html5.svg" alt="Hmlt5">
-                                <img src="assets/images/css3.svg" alt="Css3">
-                                <img src="assets/images/sass.svg" alt="Sass">
-                                <img src="assets/images/bootstrap.svg" alt="Bootstrap">
-                                <img src="assets/images/google-font.svg" alt="Google Font">
-                                <img src="assets/images/w3c.svg" alt="W3c">
-                            </div>
-                        </div>
-                    </section>
-                    <section id="demos" class="section background-grey spdtb">
-                        <div class="container">
-                            <div class="heading align-center mb32">
-                                <h2 class="heading-title size-l">27+ Unique Demos</h2>
-                                <div class="heading-desc size-l w600 color-navy">No Coding Required</div>
-                            </div>
-                            <div class="block-list layout-01 block-flex-center block-list-flex mb60">
-                                <ul>
-                                    <li>
-                                        <i class="las la-check"></i>
-                                        <span>Full Responsive</span>
-                                    </li>
-                                    <li>
-                                        <i class="las la-check"></i>
-                                        <span>Full Dark Mode</span>
-                                    </li>
-                                    <li>
-                                        <i class="las la-check"></i>
-                                        <span>Easy To Customize</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="block-image-box layout-05">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-startup.html" title="Image"><img src="assets/images/demo-01.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-hot">Hot</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-startup.html" title="Startup">Startup</a></h3>
-                                            </div>
+                            <div class="row flex-align-c first-container-after-header">
+                                <div class="col-lg-8">
+                                    <div class="pdr60">
+                                        <div class="heading mb32">
+                                            <div class="heading-sub layout-02">No Private Token Sale</div>
+                                            <h2 class="heading-title size-xl">Hearify.AI</h2>
+                                            <div class="heading-desc">A decentralized SaaS product powered by artificial intelligence to measure speech to text analysis.</div>
+                                            <div class="heading-desc"><span style="color:#dc6967;font-weight: bold;">$HEAR</span> is a BEP-20 token of Hearify.AI that will be used as a payment utility for the companies that would like to use Hearify.AI's big data via its API.</div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-shopify-app.html" title="Image"><img src="assets/images/demo-02.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-hot">Hot</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-shopify-app.html" title="Shopify App">Shopify App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-nft.html" title="Image"><img src="assets/images/demo-03.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-new">New</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-nft.html" title="NFT Game">NFT Game</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-app-showcase.html" title="Image"><img src="assets/images/demo-04.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-hot">Hot</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-app-showcase.html" title="App Showcase">App Showcase</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-saas.html" title="Image"><img src="assets/images/demo-05.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-hot">Hot</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-saas.html" title="Saas Subscription">Saas Subscription</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-seo.html" title="Image"><img src="assets/images/demo-06.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-hot">Hot</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-seo.html" title="SEO Egency">SEO Egency</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-hr-maganement.html" title="Image"><img src="assets/images/demo-07.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-hot">Hot</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-hr-maganement.html" title="Softwave">Softwave</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-web3.html" title="Image"><img src="assets/images/demo-08.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-new">New</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-web3.html" title="Web3">Web3</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-ico.html" title="Image"><img src="assets/images/demo-09.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-ico.html" title="Crypto ICO">Crypto ICO</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-vr.html" title="Image"><img src="assets/images/demo-10.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-vr.html" title="Seller Page - VR">Seller Page - VR</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-book.html" title="Image"><img src="assets/images/demo-11.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-book.html" title="Seller Page - Book">Seller Page - Book</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-ecommerce-agency.html" title="Image"><img src="assets/images/demo-12.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-ecommerce-agency.html" title="Ecommerce Agency">Ecommerce Agency</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-fitness.html" title="Image"><img src="assets/images/demo-13.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-fitness.html" title="Fitness App">Fitness App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-webinar.html" title="Image"><img src="assets/images/demo-14.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-webinar.html" title="Webinar">Webinar</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-chat-service.html" title="Image"><img src="assets/images/demo-15.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-chat-service.html" title="Chat Tool">Chat Tool</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-email.html" title="Image"><img src="assets/images/demo-16.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-email.html" title="Email Tool">Email Tool</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-ecommerce-platform.html" title="Image"><img src="assets/images/demo-17.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-ecommerce-platform.html" title="Ecommerce Platform">Ecommerce Platform</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-coworking.html" title="Image"><img src="assets/images/demo-18.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-coworking.html" title="Coworking">Coworking</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-video.html" title="Image"><img src="assets/images/demo-19.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-video.html" title="Video Conferencing">Video Conferencing</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-design-portfolio.html" title="Image"><img src="assets/images/demo-20.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-design-portfolio.html" title="Desinger Porfolio">Desinger Porfolio</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-design-studio.html" title="Image"><img src="assets/images/demo-21.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-design-studio.html" title="Design Studio">Design Studio</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-fintech.html" title="Image"><img src="assets/images/demo-22.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-fintech.html" title="Fintech App">Fintech App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-crypto.html" title="Image"><img src="assets/images/demo-23.webp" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-crypto.html" title="Crypto App">Crypto App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-dating.html" title="Image"><img src="assets/images/demo-24.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-dating.html" title="Dating App">Dating App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-music-app.html" title="Image"><img src="assets/images/demo-25.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-music-app.html" title="Music App">Music App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-pet.html" title="Image"><img src="assets/images/demo-26.png" alt="Thumbnail"></a>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-pet.html" title="Vet App">Vet App</a></h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="image-box">
-                                            <div class="thumbnail">
-                                                <a target="_blank" href="home-rtl.html" title="Image"><img src="assets/images/demo-27.png" alt="Thumbnail"></a>
-                                                <div class="badge badge-new">New</div>
-                                            </div>
-                                            <div class="content">
-                                                <h3 class="title"><a target="_blank" href="home-rtl.html" title="RTL Demo">RTL Demo</a></h3>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="lg-mt32">
+                                        <img class="wow animate__fadeInDown" src="assets/images/dashboard2.png" alt="Image">
                                     </div>
                                 </div>
                             </div>
@@ -451,35 +136,264 @@
                     </section>
                     <section class="section spdt">
                         <div class="container">
-                            <div class="row flex-align-c">
-                                <div class="col-lg-6">
-                                    <div class="pdr60">
-                                        <div class="heading mb32">
-                                            <h2 class="heading-title">Full Dark Mode</h2>
-                                            <div class="heading-desc">Turn on Dark Mode for a great viewing experience especially in low-light environments. Turn on Dark Mode to give your eyes a break.</div>
+                            <div class="block-grid layout-02" style="grid-template-columns: 50% 50%;">
+                                <div class="grid-item background-navy background-full" style="background-image: url(assets/images/hi-02.png);">
+                                    <h3 class="title">Our Public Sale Starts in</h3>
+                                    <div class="block-countdown color-white" data-time="Mar 15, 2024 15:37:25" data-expired-text="Sorry you are late!">
+                                        <div class="item days">
+                                            <span class="number">29</span>
+                                            <span class="text">days</span>
                                         </div>
-                                        <div class="block-list block-list-flex layout-01">
-                                            <ul>
-                                                <li>
-                                                    <i class="las la-check"></i>
-                                                    <span>Smart Mode Toggle</span>
-                                                </li>
-                                                <li>
-                                                    <i class="las la-check"></i>
-                                                    <span>Individual Colors</span>
-                                                </li>
-                                                <li>
-                                                    <i class="las la-check"></i>
-                                                    <span>Easy settings for Dark Mode</span>
-                                                </li>
-                                            </ul>
+                                        <div class="item hours">
+                                            <span class="number">13</span>
+                                            <span class="text">hours</span>
+                                        </div>
+                                        <div class="item minutes">
+                                            <span class="number">48</span>
+                                            <span class="text">minutes</span>
+                                        </div>
+                                        <div class="item seconds">
+                                            <span class="number">06</span>
+                                            <span class="text">seconds</span>
+                                        </div>
+                                    </div>
+                                    <div class="button-wrap">
+                                        <a href="contact-01.html" class="button fullfield fullfield-yellow" title="Join Our Private Sale">Join Our Public Sale on PinkSale</a>
+                                    </div>
+                                </div>
+                                <div class="grid-item background-navy-2 background-full" style="background-image: url(assets/images/hi-02.png);">
+                                    <h3 class="title">Whitepaper</h3>
+                                    <img src="assets/images/hi-03.svg" alt="Image">
+                                    <div class="button-wrap">
+                                        <a href="contact-01.html" class="button fullfield fullfield-yellow" title="Download">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section spdt">
+                        <div class="heading align-center">
+                            <div class="heading-sub color-navy">Invest with Trust</div>
+                            <h2 class="heading-title size-l">Partners</h2>
+                        </div>
+                        <div class="block-infinite layout-02">
+                            <div class="infinite" data-speed="100">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/bnb.png" alt="BNB Chain">
+                                    </div>
+                                    <span>BNB Chain</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/bscscan.png" alt="BSCScan">
+                                    </div>
+                                    <span>BSCScan</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/pancakeswap.png" alt="PancakeSwap">
+                                    </div>
+                                    <span>PancakeSwap</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/coinmarketcap.png" alt="CoinMarketCap">
+                                    </div>
+                                    <span>CoinMarketCap</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/coingecko.webp" alt="CoinGecko">
+                                    </div>
+                                    <span>CoinGecko</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/dextools.png" alt="DEXTools">
+                                    </div>
+                                    <span>DEXTools</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/dexview.png" alt="DexView">
+                                    </div>
+                                    <span>DexView</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/openai.png" alt="OpenAI">
+                                    </div>
+                                    <span>OpenAI</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/chatgpt.png" alt="ChatGPT">
+                                    </div>
+                                    <span>ChatGPT</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/digitalocean.png" alt="DigitalOcean">
+                                    </div>
+                                    <span>DigitalOcean</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/aveai.png" alt="Ave.ai">
+                                    </div>
+                                    <span>Ave.ai</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-infinite layout-02 mt20">
+                            <div class="infinite layout-02" data-speed="100">
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/twitter.png" alt="Twitter">
+                                    </div>
+                                    <span>Twitter</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/meta.png" alt="Meta" style="height: 38px;">
+                                    </div>
+                                    <span>Meta</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/spotify.png" alt="Spotify">
+                                    </div>
+                                    <span>Spotify</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/clubhouse.png" alt="Clubhouse">
+                                    </div>
+                                    <span>Clubhouse</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/twitch.png" alt="Twitch">
+                                    </div>
+                                    <span>Twitch</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/youtube.png" alt="Youtube">
+                                    </div>
+                                    <span>Youtube</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/soundcloud.png" alt="SoundCloud">
+                                    </div>
+                                    <span>SoundCloud</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/tedx.svg" alt="TEDx" style="height: 38px;">
+                                    </div>
+                                    <span>TEDx</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/vimeo.png" alt="Vimeo">
+                                    </div>
+                                    <span>Vimeo</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/zoom.png" alt="Zoom">
+                                    </div>
+                                    <span>Zoom</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/webex.png" alt="Cisco Webex">
+                                    </div>
+                                    <span>Cisco Webex</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/teams.png" alt="Microsoft Teams">
+                                    </div>
+                                    <span>MS Teams</span>
+                                </div>
+                                <div class="item">
+                                    <div class="thumb">
+                                        <img src="assets/images/meet.png" alt="Google Meet">
+                                    </div>
+                                    <span>Google Meet</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section spdtb" style="padding-bottom: 0;">
+                        <div class="container">
+                            <div class="heading align-center">
+                                <h2 class="heading-title size-l">Join the community</h2>
+                            </div>
+                            <div class="block-icon-box layout-15">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="icon-box icon-box-background-grey">
+                                            <div class="icon"><i class="lab la-telegram"></i></div>
+                                            <div class="content">
+                                                <h4 class="title">Telegram</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="icon-box icon-box-background-grey">
+                                            <div class="icon"><i class="lab la-twitter"></i></div>
+                                            <div class="content">
+                                                <h4 class="title">Twitter</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="icon-box icon-box-background-grey">
+                                            <div class="icon"><i class="lab la-medium"></i></div>
+                                            <div class="content">
+                                                <h4 class="title">Medium</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="icon-box icon-box-background-grey">
+                                            <div class="icon"><i class="lab la-reddit"></i></div>
+                                            <div class="content">
+                                                <h4 class="title">Reddit</h4>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="twentytwenty-wrap lg-mt32">
-                                        <img src="assets/images/light-mode.jpg" class="image-first" alt="Image">
-                                        <img src="assets/images/dark-mode.jpg" class="image-last" alt="Image">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section spdt" id="about">
+                        <div class="container">
+                            <div class="row flex-align-c">
+                                <div class="col-lg-6 lg-order-2">
+                                    <div class="pdr80 lg-mt32">
+                                        <div class="heading mb24">
+                                            <div class="heading-sub color-navy" style="text-transform: none;">About Hearify.AI</div>
+                                            <h3 class="heading-title">What is Hearify.AI?</h3>
+                                            <div class="heading-desc" style="text-align: justify;">
+                                                Starting from the COVID-19 pandemic, people have been experiencing online speech platforms that bringing people together around some specified topics. These platforms are now one of the most popular places that the people are talking about what interest them.
+                                                Hearify.AI allows people to get the real-time speech to text data from the platforms it integrates.
+                                                <br><br>
+                                                Additionally, Hearify.AI offers data visualization and analytics tools to help users interpret and make use of the big data they collect from the various supported platforms. These tools could include charts, graphs, and other visual representations of the data, as well as analytics features such as trend analysis, sentiment analysis, and more.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 lg-order-1">
+                                    <div class="images layout-03">
+                                        <div class="inner">
+                                            <img class="wow animate__fadeInLeft" src="assets/images/what_is_hearifyai.png" alt="Image">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -488,151 +402,563 @@
                     <section class="section spdtb">
                         <div class="container">
                             <div class="row flex-align-c">
+                                <div class="col-lg-6 lg-order-1">
+                                    <div class="images layout-03">
+                                        <div class="inner">
+                                            <img class="wow animate__fadeInRight" src="assets/images/how_does_hearifyai_work.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-lg-6 lg-order-2">
-                                    <div class="twentytwenty-wrap lg-mt32">
-                                        <img src="assets/images/ltr-mode.jpg" class="image-first" alt="Image">
-                                        <img src="assets/images/rtl-mode.jpg" class="image-last" alt="Image">
+                                    <div class="pdl80 lg-mt32">
+                                        <div class="heading mb12">
+                                            <h3 class="heading-title">How does Hearify.AI work?</h3>
+                                            <div class="heading-desc" style="text-transform: none;">
+                                                Hearify.AI does have nodes that are listening to the online streams listed below in real-time. Having the specified stream room has ended, Hearify.AI extracts the entire speech script and then goes to its AI module to summarize the script.
+                                                In the meantime, it builds a big data that contains very complex data such as;
+                                                </b>
+                                            </div>
+                                        </div>
+                                        <div class="block-list block-grid layout-01 block-list-flex mt20">
+                                            <div class="grid-item">
+                                                <ul>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Speech Summaries</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Keywords</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Topics</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Company Names</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Locations</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="grid-item">
+                                                <ul>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Voice Records</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Metadata</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Entire Speech</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>User Behaviours</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>User Preferences</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section spdtb" style="padding-top: 0;">
+                        <div class="container">
+                            <div class="row flex-align-c">
+                                <div class="col-lg-6 lg-order-2">
+                                    <div class="pdl80 lg-mt32">
+                                        <div class="heading mb24">
+                                            <h3 class="heading-title">Platforms Hearify.AI supports</h3>
+                                        </div>
+                                        <div class="block-list block-grid layout-01 block-list-flex">
+                                            <div class="grid-item">
+                                                <ul>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Twitter Spaces</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Clubhouse</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Meta</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Spotify</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>SoundCloud</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Microsoft Teams</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Google Meet</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="grid-item">
+                                                <ul>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Twitch</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Youtube</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>TEDx</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Vimeo</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Zoom</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check"></i>
+                                                        <span>Cisco Webex</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 lg-order-1">
-                                    <div class="pdl60">
+                                    <div class="images layout-03">
+                                        <div class="inner">
+                                            <img class="wow animate__fadeInRight" src="assets/images/bilboard.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section spdtb" style="padding-top: 0;" id="utility">
+                        <div class="container">
+                            <div class="row flex-align-c">
+                                <div class="col-lg-6 lg-order-1">
+                                    <div class="images layout-03">
+                                        <div class="inner">
+                                            <img class="wow animate__fadeInRight" src="assets/images/dashboard3.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 lg-order-2">
+                                    <div class="pdl80 lg-mt32">
+                                        <div class="heading mb12">
+                                            <h3 class="heading-title">What is the utility of <label style="color: #dc6967; text-decoration: none;">$HEAR?</label></h3>
+                                            <div class="heading-desc" style="text-transform: none;">
+                                                The big data that Hearify.AI collects from the platforms above can only be used by the users who deposit sufficient amount of $HEAR to their accounts.
+                                                <br><br>
+                                                For example, if you would like to know the most mentioned technology company in the last one month in the Twitter Spaces rooms in Japan, you can use the $HEAR you have deposited to your account to get the answer.
+                                                <br><br>
+                                                <span style="font-weight: bold">100% amount of $HEAR deposited to the user accounts in order to use Hearify.AI API will automatically be burnt.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="roadmap" class="section background-full background-yellow spdtb" style="background-image: url(assets/images/hi-18.png);">
+                        <div class="container">
+                            <div class="heading heading-alway-dark align-center">
+                                <h2 class="heading-title size-l">Roadmap</h2>
+                            </div>
+                            <div class="block-timeline layout-03">
+                                <div class="item is-active">
+                                    <div class="inner">
+                                        <h3 class="title">Phase I</h3>
+                                        <div class="desc">
+                                            <div class="block-list block-grid layout-01 block-list-flex mt20" style="grid-template-columns: 100%;">
+                                                <div class="grid-item">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Project Guideline</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Whitepaper</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Smart Contract Audit</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>KYC & SAFU</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Marketing before launch</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>PinkSale Listing</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>CMC & CG Listing</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>AveDex #1 Trending</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Closed Alpha Tests</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>PancakeSwap Listing</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="inner">
+                                        <h3 class="title">Phase II</h3>
+                                        <div class="desc">
+                                            <div class="block-list block-grid layout-01 block-list-flex mt20" style="grid-template-columns: 100%;">
+                                                <div class="grid-item">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Open Beta Tests</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Launching User Panel</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Launching API access on TestNet</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>$HEAR Staking Pools</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Twitter Spaces integration on production</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Corporate Presentations</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Investment Hunting</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>First CEX Listing</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="inner">
+                                        <h3 class="title">Phase III</h3>
+                                        <div class="desc">
+                                            <div class="block-list block-grid layout-01 block-list-flex mt20" style="grid-template-columns: 100%;">
+                                                <div class="grid-item">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Incorporation</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Launching Hearify.AI API on the production</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Corporate Presentations</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Twitch, Clubhouse and YouTube integrations</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="inner">
+                                        <h3 class="title">Phase IV</h3>
+                                        <div class="desc">
+                                            <div class="block-list block-grid layout-01 block-list-flex mt20" style="grid-template-columns: 100%;">
+                                                <div class="grid-item">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Integrations with Meta (Facebook), Spotify, TEDx, Vimeo and SoundCloud</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Launching mobile application for API administration</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="inner">
+                                        <h3 class="title">Phase V</h3>
+                                        <div class="desc">
+                                            <div class="block-list block-grid layout-01 block-list-flex mt20" style="grid-template-columns: 100%;">
+                                                <div class="grid-item">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Integrations with Microsoft Teams, Google Meet, Zoom and Cisco Webex</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="las la-check" style="background-color:#dc6967"></i>
+                                                            <span>Launching Hearify.AI public nodes</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="tokenomics" class="section background-grey spdtb" style="padding-bottom: 0; padding-top: 40px;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="pdr30">
                                         <div class="heading mb32">
-                                            <h2 class="heading-title">RTL & LTR Version</h2>
-                                            <div class="heading-desc">Sala provides fully responsive a choice to choose LTR or RTL version supported in both Light and Dark mode managed with Inline CSS based.</div>
+                                            <h3 class="heading-title">Token Distribution</h3>
+                                            <div class="heading-desc">
+                                                Hearify.AI's token distribution is as follows:
+                                            </div>
                                         </div>
+                                        <div class="block-list layout-01 block-list-flex">
+                                            <div class="grid-item">
+                                                <ul>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color: coral"></i>
+                                                        <span>Total Supply: <b style="color: #9932cc">100.000.000</b></span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color: #67b7dc"></i>
+                                                        <span>Fair Launch: <b style="color: #9932cc">45.000.000</b></span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#8067dc"></i>
+                                                        <span>Liquidity: <b style="color: #9932cc">25.650.000</b></span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color: #dc67ce"></i>
+                                                        <span>Team & Advisory: <b style="color: #9932cc">9.350.000</b></span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="las la-check" style="background-color:#dc6967"></i>
+                                                        <span>Rewards: <b style="color: #9932cc">20.000.000</b></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="block-chart lg-mt32">
+                                        <div id="chartdiv"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="section background-black spdtb">
+                    <section id="faq" class="section spdt">
                         <div class="container">
-                            <div class="heading align-center heading-alway-white">
-                                <div class="heading-sub w600">Build Anything</div>
-                                <h2 class="heading-title size-xl">Template Features</h2>
+                            <div class="heading align-center mb60">
+                                <h2 class="heading-title size-l">Frequently asked questions</h2>
                             </div>
-                            <div class="block-icon-box layout-18">
+                            <div class="block-accordion enable layout-02">
                                 <div class="row">
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="lab la-sass"></i></div>
-                                            <h4 class="title">Built <br> With SASS</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What is Hearify.AI?</h4>
+                                            <div class="content"><p>Hearify.AI is a decentralized SaaS product powered by artificial intelligence to measure speech to text analysis.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-desktop"></i></div>
-                                            <h4 class="title">Fully <br> Responsive</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What is $HEAR?</h4>
+                                            <div class="content"><p>$HEAR is a BEP-20 token of Hearify.AI that will be used as a payment utility for the companies that would like to use Hearify.AI's big data via its API.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="lab la-internet-explorer"></i></div>
-                                            <h4 class="title">Browser <br> Compatibility</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What is the utility of $HEAR?</h4>
+                                            <div class="content"><p>The big data that Hearify.AI collects from the platforms above can only be used by the users who deposit sufficient amount of $HEAR to their accounts.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-eye"></i></div>
-                                            <h4 class="title">Retina <br> Ready</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">How to use Hearify.AI?</h4>
+                                            <div class="content"><p>User control panel will be released at the second phase of the roadmap and people will be able to use Hearify.AI by depositing $HEAR tokens to their accounts.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-align-right"></i></div>
-                                            <h4 class="title">RTL Supported Theme</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What platforms do Hearify.AI support?</h4>
+                                            <div class="content">
+                                                <div class="block-list block-grid layout-01 block-list-flex">
+                                                    <div class="grid-item">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Twitter Spaces</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Clubhouse</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Meta</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Spotify</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>SoundCloud</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Microsoft Teams</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Google Meet</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="grid-item">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Twitch</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Youtube</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>TEDx</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Vimeo</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Zoom</span>
+                                                            </li>
+                                                            <li>
+                                                                <i class="las la-check"></i>
+                                                                <span>Cisco Webex</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-adjust"></i></div>
-                                            <h4 class="title">Dark Supported Theme</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What is the price for using Hearify.AI API?</h4>
+                                            <div class="content"><p>The usage price of the Hearify.AI API will be set at the second phase of the roadmap.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-icons"></i></div>
-                                            <h4 class="title">Flaticon <br> Icon</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">Why should I use Hearify.AI?</h4>
+                                            <div class="content"><p>Hearify.AI is a very useful SaaS product for the companies that study the people behaviours such as detecting what technology company name is mentioned in Germany at previous week, or what gender prefers Apple over Samgung in Canada.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-check-circle"></i></div>
-                                            <h4 class="title">W3c <br> Valid Code</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">Is Hearify.AI safe?</h4>
+                                            <div class="content"><p>Yes it is safe. Each user is assigned a dynamic API secret key that regenerates at each deposit. For the data privacy, Hearify.AI is using AWS and will have its platform tested with some security vulnerabilities and penetration scenarios before launching on production.</p></div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-otter"></i></div>
-                                            <h4 class="title">WOW Animation Plugin</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">How does AI module on Hearify.AI work?</h4>
+                                            <div class="content">
+                                                <p>Hearify.AI uses its AI module to perform speech-to-text analysis by extracting the entire speech script from the platforms it integrates, then using its AI algorithms to summarize the script and extract complex data such as speech summaries, keywords, topics, company names, locations, voice records, metadata, entire speech, user behaviors, and user preferences. The accuracy of the results may depend on various factors such as the quality of the audio input and the language and dialect used in the speech.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-cog"></i></div>
-                                            <h4 class="title">Easy to customize</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What is the impact of Hearify.AI to the market?</h4>
+                                            <div class="content">
+                                                <p>The impact of Hearify.AI on the market could be significant, as it offers advanced speech-to-text technology that could have a wide range of applications in various industries. It has the potential to improve communication, accessibility, and productivity, especially for individuals with hearing impairments or those who work in noisy environments. Additionally, Hearify.AI's features such as data visualization and analytics tools could provide valuable insights to businesses and organizations. Overall, Hearify.AI differentiates itself from competitors by providing high accuracy and advanced features in its speech-to-text technology, which could lead to increased adoption and market impact.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-image"></i></div>
-                                            <h4 class="title">Free Illustrator Image</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">How does Hearify.AI process?</h4>
+                                            <div class="content">
+                                                <p>Hearify.AI uses 15 starting nodes on AWS to listen to the most popular Twitter Spaces streams. Once the streams are finished, our main module extracts the entire script, and then our modules use ChatGPT's API to summarize the entire script. In addition to this, Hearify.AI stores various types of data, such as keywords, topics, company names, locations, voice records, metadata, entire speech, user behaviors, and user preferences on databases on AWS. This data is processed and stored securely to protect user privacy and is used to provide valuable insights for businesses and organizations.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-camera"></i></div>
-                                            <h4 class="title">Free <br> Images</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="lab la-google"></i></div>
-                                            <h4 class="title">Free Google Fonts</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-code-branch"></i></div>
-                                            <h4 class="title">Well Code</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-code"></i></div>
-                                            <h4 class="title">Clean Code</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-undo-alt"></i></div>
-                                            <h4 class="title">Free Updates</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-book"></i></div>
-                                            <h4 class="title">Detailed Docs</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-4 col-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><i class="las la-heart"></i></div>
-                                            <h4 class="title">Developer Friendly</h4>
+                                    <div class="col-lg-6">
+                                        <div class="accordion-item border-line">
+                                            <h4 class="title">What is the buy and sell tax of $HEAR?</h4>
+                                            <div class="content">
+                                                <p>It is 4% for both.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section spdtb background-navy">
-                        <div class="container">
-                            <div class="heading align-center heading-alway-white mb32">
-                                <div class="heading-sub w600">one time payment</div>
-                                <h2 class="heading-title size-xl">Build a stunning <br> site today.</h2>
-                            </div>
-                            <div class="button-wrap align-center">
-                                <a href="contact-01.html" class="button fullfield-white" title="Get It Now">Get It Now</a>
                             </div>
                         </div>
                     </section>
@@ -641,9 +967,13 @@
             <!-- END SITE MAIN -->
 
             <!-- BEGIN SITE FOOTER -->
-            <footer id="footer" class="footer pt30 pb30">
-                <div class="container">
-                    <div class="copyright align-center">© 2023 Uxper. All rights reserved</div>
+            <footer id="footer" class="footer">
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="inner flex flex-content-sb flex-align-c justify-content-center">
+                            <div class="copyright">© 2023 Hearify.AI, All rights reserved</div>
+                        </div>
+                    </div>
                 </div>
             </footer>
             <!-- END SITE FOOTER -->
@@ -669,44 +999,67 @@
                 </svg>
             </a>
             <!-- END BACK TO TOP -->
-
-            <!-- BEGIN POPUP -->
-            <div id="popup-wrap" class="popup-wrap popup-video">
-                <div class="overlay"></div>
-                <span class="close">
-                    <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 28 28"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M15.3672 14.5L20.2109 19.3438C20.3411 19.474 20.3411 19.6172 20.2109 19.7734L19.3125 20.6719C19.1562 20.8021 19.013 20.8021 18.8828 20.6719L18.0625 19.8125L14.0391 15.8281L9.19531 20.6719C9.0651 20.8021 8.92188 20.8021 8.76562 20.6719L7.86719 19.7734C7.73698 19.6172 7.73698 19.474 7.86719 19.3438L12.7109 14.5L7.86719 9.65625C7.73698 9.52604 7.73698 9.38281 7.86719 9.22656L8.76562 8.32812C8.92188 8.19792 9.0651 8.19792 9.19531 8.32812L14.0391 13.1719L18.8828 8.32812C19.013 8.19792 19.1562 8.19792 19.3125 8.32812L20.2109 9.22656C20.3411 9.38281 20.3411 9.52604 20.2109 9.65625L19.3516 10.4766L15.3672 14.5Z"
-                            fill="#ffffff"
-                        ></path>
-                    </svg>
-                </span>
-                <div class="inner">
-                    <iframe
-                        src="https://www.youtube.com/embed/vfhzo499OeA?controls=0"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                    ></iframe>
-                </div>
-            </div>
-            <!-- END POPUP -->
         </div>
+
 
         <!-- jQuery -->
         <script src="assets/js/jquery-1.12.4.js"></script>
         <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
         <script src="assets/libs/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/libs/counter/jquery.counterup.min.js"></script>
         <script src="assets/libs/wowjs/wow.min.js"></script>
-        <script src="assets/libs/twentytwenty/jquery.event.move.js"></script>
-        <script src="assets/libs/twentytwenty/jquery.twentytwenty.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+        <script>
+            am4core.ready(function() {
+            
+            // Themes begin
+            am4core.useTheme(am4themes_animated);
+            // Themes end
+            
+            var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+            chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+            
+            chart.data = [
+              {
+                category: "Fair Launch",
+                share: 45000000
+              },
+              {
+                category: "Liquidity",
+                share: 25650000
+              },
+              {
+                category: "Team & Advisory",
+                share: 9350000
+              },
+              {
+                category: "Rewards",
+                share: 20000000
+              }
+            ];
+            
+            chart.innerRadius = am4core.percent(30);
+            chart.depth = 100;
+            
+            
+            var series = chart.series.push(new am4charts.PieSeries3D());
+            series.dataFields.value = "share";
+            series.dataFields.depthValue = "share";
+            series.dataFields.category = "category";
+            series.slices.template.cornerRadius = 5;
+            series.colors.step = 3;
+            
+            series.labels.template.disabled = true;
+            }); // end am4core.ready()
+
+            $(document).ready(function() {
+                $('[aria-labelledby="id-66-title"]').css('display', 'none');
+            });
+            </script>
+
     </body>
 </html>
