@@ -11025,7 +11025,7 @@ form.checkout-coupon input[type=text] {
   top: 24px;
   left: auto;
   right: -76px;
-  background-color: var(--sala-primary-navy, #0057fc);
+  background-color: #dc6967;
   border: 6px solid var(--sala-tone-yellow, #ffdd0f);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
