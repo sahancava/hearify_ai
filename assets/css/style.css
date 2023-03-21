@@ -502,6 +502,10 @@ a:hover {
   background-color: var(--sala-tone-yellow, #ffdd0f);
 }
 
+.background-turquoise {
+  background-color: #638b9c;
+}
+
 .background-red {
   background-color: var(--sala-tone-red, #ff1f25);
 }
