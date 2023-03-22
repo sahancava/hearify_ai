@@ -12962,6 +12962,12 @@ form.checkout-coupon input[type=text] {
     display: flex;
     justify-content: center;
   }
+  .tokenomics_first {
+    width: 25.33333333%
+  }
+  .tokenomics_second {
+    width: 24%;
+  }
 }
 
 @media (min-width: 1920px) and (max-width: 2560px)  {
@@ -12974,6 +12980,13 @@ form.checkout-coupon input[type=text] {
   .header-menu {
     width: 35.333333%;
   }
+}
+
+.tokenomics_first {
+  width: 25.33333333%
+}
+.tokenomics_second {
+  width: 24%;
 }
 
 @media (max-width: 576px) {
@@ -12990,7 +13003,20 @@ form.checkout-coupon input[type=text] {
   #chartdiv {
     margin-bottom: -70%;
   }
+  .template_li_mobile {
+    margin-top: 24px;
+  }
+  .tax_header {
+    margin-top: 24px;
+  }
+  .tokenomics_first {
+    width: 100%;
+  }
+  .tokenomics_second {
+    width: 100%;
+  }
 }
+
 .text-right {
   text-align: right !important;
 }
