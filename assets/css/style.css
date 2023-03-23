@@ -12327,7 +12327,7 @@ form.checkout-coupon input[type=text] {
   display: none;
 }
 .block-countdown .number {
-  font-size: 56px;
+  font-size: 40px;
   line-height: 1.11;
   font-weight: 600;
   color: var(--sala-neutral-dark, #111111);
@@ -12338,6 +12338,7 @@ form.checkout-coupon input[type=text] {
 }
 .block-countdown .text {
   display: block;
+  margin-top: 16px;
   color: var(--sala-neutral-dark, #111111);
 }
 .block-countdown.color-white .number,

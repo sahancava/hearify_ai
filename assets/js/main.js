@@ -40,7 +40,7 @@ var SALA = SALA || {};
             SALA.element.timeline();
             SALA.element.elasticstack();
             SALA.element.infinite();
-            SALA.element.countdown();
+            // SALA.element.countdown();
     	},
 
         windowLoad: function() {
