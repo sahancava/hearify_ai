@@ -13025,3 +13025,26 @@ form.checkout-coupon input[type=text] {
 .text-left {
   text-align: left !important;
 }
+
+
+
+.clipboard {
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+  cursor: pointer;
+  color: #000000;
+  font-size: x-large;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.clipboard:hover {
+  top: 2px;
+}

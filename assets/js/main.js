@@ -3,6 +3,17 @@ var SALA = SALA || {};
 (function ($) {
     "use strict";
 
+    $('.clipboard').click(function() {
+        $('#contractID').removeAttr('disabled')
+        $('#contractID').select();
+        document.execCommand("copy");
+        $("#clipboardDiv > p").text("Contract Address Copied!");
+        $('#contractID').attr('disabled', 'disabled')
+        setTimeout(() => {
+          $("#clipboardDiv > p").fadeOut('show');
+        }, 1500);
+      })
+      
     function isInViewport(node) {
 		let rect = node.getBoundingClientRect()
 		return (
