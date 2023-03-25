@@ -13016,6 +13016,9 @@ form.checkout-coupon input[type=text] {
   .tokenomics_second {
     width: 100%;
   }
+  .telegram-button {
+    margin-top: 2%;
+  }
 }
 
 .text-right {
