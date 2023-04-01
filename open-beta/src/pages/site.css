@@ -183,20 +183,8 @@ body {
     linear-gradient(135deg, #670d10 0%, #092756 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
 }
-.form-submitted {
-  transform: translateY(-50%);
-}
-.testform {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -150px 0 0 -150px;
-  width: 300px;
-  height: 300px;
-  transition: all 0.5s ease-in-out;
-}
 .submitted-data-container {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   background-color: #f0f0f0;
   border-radius: 5px;
@@ -205,14 +193,36 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .submitted-data-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   text-align: center;
 }
+#freeAlert{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
+   animation:freeAlert 0.5s 1;
+  -webkit-animation:freeAlert 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay:3s;
+  -webkit-animation-delay:3s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+
+} 
+
+@keyframes freeAlert{
+  from {opacity :1;}
+  to {opacity :0;}
+}
+
+@-webkit-keyframes freeAlert{
+  from {opacity :1;}
+  to {opacity :0;}
+}
 .submitted-data-grid div {
   background-color: #fff;
   border-radius: 5px;
