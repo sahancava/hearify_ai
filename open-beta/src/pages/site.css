@@ -183,15 +183,42 @@ body {
     linear-gradient(135deg, #670d10 0%, #092756 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
 }
-.login {
+.form-submitted {
+  transform: translateY(-50%);
+}
+.testform {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -150px 0 0 -150px;
   width: 300px;
   height: 300px;
+  transition: all 0.5s ease-in-out;
 }
-.login h1 {
+.submitted-data-container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitted-data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.submitted-data-grid div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+.testform h1 {
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
