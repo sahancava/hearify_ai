@@ -18,19 +18,30 @@ const Test = () => {
   const initialState: any = null;
   const [submittedData, setSubmittedData] = useState(initialState);
 
-  const addProduct = async (/** @type {any} */ wallet: string) => {
+  // useEffect(() => {
+  //   console.log('ready');
+  //   setTimeout(async () => {
+  //     const res = await axios.get("http://161.35.199.245/sample?TwitterSpacesID=" + space + "&walletAddress=" + wallet);
+  //     console.log(res.data);
+  //   }, 1000);
+  // }, []);
+
+  const addProduct = async (/** @type {any} */ wallet: string, /** @type {any} */ space: string) => {
     try {
-      const res = await axios.post("https://hearify.ai/open-test/", {
-        wallet: wallet
-      });
-      return res.data;
+      console.log('wallet', wallet)
+      console.log('space', space)
+      // const res = await axios.post("http://161.35.199.245/sample", {
+      //   'TwitterSpacesID': space,
+      //   'walletAddress': wallet
+      // });
+      // return res.data;
+      const res = await axios.get("http://161.35.199.245/sample?TwitterSpacesID=" + space + "&walletAddress=" + wallet);
+      console.log(res.data);
     } catch (err) {
       console.log(err);
       return { error: err };
     }
   }
-
-
 
   const posted = async (e: React.FormEvent<HTMLFormElement>) => {
     let bigHTML = document.querySelector('#bigHTML') as HTMLElement;
@@ -43,7 +54,7 @@ const Test = () => {
 
     if (wallet.length > 0 && space.length > 0) {
       bigHTML.style.pointerEvents = 'auto';
-      const res = await addProduct(wallet);
+      const res = await addProduct(wallet, space);
       console.log(res);
       return
     } else {
