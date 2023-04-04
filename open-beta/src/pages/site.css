@@ -120,14 +120,18 @@
 html {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  
+  /* overflow: hidden; */
 }
-
+.ul-remove {
+  list-style-type: none;
+}
 body {
   width: 100%;
   height: 100%;
   font-family: "Open Sans", sans-serif;
-  background: #092756;
+  background: linear-gradient(#670d10,#092756) fixed;
+  /* background: #092756;
   background: -moz-radial-gradient(
       0% 100%,
       ellipse cover,
@@ -181,7 +185,7 @@ body {
       rgba(42, 60, 87, 0.4) 100%
     ),
     linear-gradient(135deg, #670d10 0%, #092756 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 ); */
 }
 .submitted-data-container {
   width: 100%;
@@ -212,8 +216,32 @@ body {
   -webkit-animation-delay:3s; /* Safari and Chrome */
   -webkit-animation-fill-mode: forwards;
 
-} 
+}
 
+#successAlert{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+   animation:successAlert 0.5s 1;
+  -webkit-animation:successAlert 0.5s 1;
+  animation-fill-mode: forwards;
+
+  animation-delay:3s;
+  -webkit-animation-delay:3s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+
+}
+
+@keyframes successAlert{
+  from {opacity :1;}
+  to {opacity :0;}
+}
+
+@-webkit-keyframes successAlert{
+  from {opacity :1;}
+  to {opacity :0;}
+}
 @keyframes freeAlert{
   from {opacity :1;}
   to {opacity :0;}
