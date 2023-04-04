@@ -17,14 +17,16 @@ const Test = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const initialState: any = null;
   const [submittedData, setSubmittedData] = useState(initialState);
+  const [content, setData] = useState([]);
 
-  // useEffect(() => {
-  //   console.log('ready');
-  //   setTimeout(async () => {
-  //     const res = await axios.get("http://161.35.199.245/sample?TwitterSpacesID=" + space + "&walletAddress=" + wallet);
-  //     console.log(res.data);
-  //   }, 1000);
-  // }, []);
+  useEffect(() => {
+    console.log('ready');
+    setTimeout(async () => {
+      const res = await axios.get("http://161.35.199.245/getvalues");
+      setData(res.data);
+      console.log(content);
+    }, 1000);
+  }, []);
 
   const addProduct = async (/** @type {any} */ wallet: string, /** @type {any} */ space: string) => {
     try {
@@ -79,6 +81,21 @@ const Test = () => {
           </div>
         </Col>
       </Row>
+        <Row className='mt2'>
+          <Col xs={12}>
+            <div className="submitted-data-container">
+              <div className="submitted-data-grid">
+                <div>
+      {content.map(item => (
+        <li key={item}>
+          item: {item[1]}
+        </li>
+      ))}
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
       {(formSubmitted)
       ?
       (wallet.length > 0 && space.length > 0)
