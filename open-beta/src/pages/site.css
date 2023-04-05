@@ -123,6 +123,12 @@ html {
   
   /* overflow: hidden; */
 }
+.marginLeft {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  text-align: center;
+}
 .ul-remove {
   list-style-type: none;
 }
@@ -256,7 +262,7 @@ body {
   border-radius: 5px;
   padding: 20px;
 }
-.testform h1 {
+.testform h2 {
   color: #fff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;

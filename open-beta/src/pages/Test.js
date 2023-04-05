@@ -26,7 +26,6 @@ const Test = () => {
   const initialState = null;
   const [submittedData, setSubmittedData] = useState(initialState);
   const [content, setData] = useState([]);
-
   useEffect(() => {
     console.log('ready');
     setTimeout(async () => {
@@ -79,20 +78,32 @@ const Test = () => {
   return (
     <Container style={{padding: '10%'}}>
       <Row className='justify-content-md-center'>
-        <Col xs={12} md={6} className="firstForm">
+        <Col lg={6} xs={12} md={6} className="firstForm">
           <div className={`testform ${formSubmitted ? 'form-submitted' : ''}`}>
-            <h1 className='mb-3'>HearifyAI Open Beta Testing</h1>
+            <h2 className='mb-3'>HearifyAI Open Beta Testing</h2>
             <form onSubmit={posted}>
               <input onChange={e => setWallet(e.target.value)} type="text" className='mb-3' name="u" placeholder="Wallet Address" required />
               <input onChange={e => setSpace(e.target.value)} type="text" className='mb-3' name="p" placeholder="Twitter Spaces URL" required />
-              <br />
-              <span style={{color: 'white', fontWeight: 'bold'}}>Accepted Formats:</span><br />
-              <span style={{color: 'white', fontSize: '11px'}}>https://twitter.com/i/spaces/1BdGYyRBQLzGX?s=20</span><br />
-              <span style={{color: 'white', fontSize: '11px'}}>https://twitter.com/i/spaces/1BdGYyRBQLzGX/peek</span><br />
-              <span style={{color: 'white', fontSize: '11px'}}>1BdGYyRBQLzGX</span><br />
+              <br /><br /><br />
               <ReCAPTCHA sitekey={SITE_KEY} ref={recaptchaRef} size="invisible" />
               <button onClick={posted} type="submit" className="btn btn-primary btn-block btn-large mb-3" style={{fontWeight: 'bold', marginTop: '2%'}}>TEST US!</button>
             </form>
+          </div>
+        </Col>
+        <Col lg={6} xs={12} md={6}>
+          <div style={{color: 'white'}}>
+            <h2 className='mb-3 marginLeft'>How To Test?</h2>
+          </div>
+          <div style={{color: 'white'}}>
+            <ul>
+              <li>Enter your BEP-20 compatible wallet address</li>
+              <li>Enter a Twitter Spaces URL in the format below:</li>
+              <li>https://twitter.com/i/spaces/SPACEID?s=20</li>
+              <li>https://twitter.com/i/spaces/SPACEID/peek</li>
+              <li>1BdGYyRBQLzGX</li>
+              <li>Around 3-4 minutes later your it will appear below.</li>
+            </ul>
+            <p style={{fontWeight: 'bold'}}>Important: Test won't be successful if you don't put the Twitter Spaces URLs as above.</p>
           </div>
         </Col>
       </Row>
@@ -130,7 +141,7 @@ const Test = () => {
       {/* THIS IS THE DATA */}
       <Row className='mt2'>
         <Col xs={12}>
-                {content.map((item, index) => {
+                {content.slice(0, 10).map((item, index) => {
                   return (
                     <Card border="light" style={{marginBottom: '2%'}}>
       <Card.Header>
